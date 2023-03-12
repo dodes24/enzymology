@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{graphicx}
+
+\title{Enzyme Kinetics Analysis Report}
+\author{Jozef Fulop}
+\date{March 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Enzyme kinetics is the study of the chemical 
+reactions that are catalyzed by enzymes. 
+This report analyzes two sets of experimental data on enzyme kinetics, 
+one with an inhibitor and one without an inhibitor. 
+Calculates the $V_max$, $K_M$ and $K_I$ values.
+
+\section{Input data}
+
+\begin{table}[htbp]
+\centering
+\begin{subtable}{\textwidth}
+\centering
+\caption{Reaction without inhibitor}
+\begin{tabular}{cccc}
+\hline
+[S](mmol/l) & [I](mmol/l) & V (µmol/L/min) \\
+\hline
+1 & 0 & 0.67 \\
+2 & 0 & 1.13 \\
+3 & 0 & 1.48 \\
+4 & 0 & 1.74 \\
+5 & 0 & 1.98 \\
+\hline
+\end{tabular}
+\end{subtable}
+\begin{subtable}{\textwidth}
+\centering
+\caption{Reaction with inhibitor}
+\begin{tabular}{cccc}
+\hline
+[S](mmol/l) & [I](mmol/l) & V (µmol/L/min) \\
+\hline
+1 & 1 & 0.05 \\
+2 & 1 & 0.10 \\
+3 & 1 & 0.15 \\
+4 & 1 & 0.16 \\
+5 & 1 & 0.18 \\
+\hline
+\end{tabular}
+\end{subtable}
+\caption{Reaction rates with and without inhibitor}
+\end{table}
+
+
+\end{document}
