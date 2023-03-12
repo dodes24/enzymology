@@ -74,13 +74,13 @@ The Lineweaver-Burk equation is given by:
 The Michaelis-Menten equation can be derived from the Lineweaver-Burk equation by
 multiplying both sides by $V$ and rearranging the terms:
 \begin{equation}
-    V = \frac{V_{max}}{\displaystyle 1 + \frac{K_{M}}{[S]}}
+    V = \frac{V_{max}}{1 + \frac{K_{M}}{[S]}}
 \end{equation}
 
 The Michaelis-Menten equation can be used to calculate the $K_I$ value, in noncompetitive
-inhibition, as follows: % V = ((Vmax / (1 + [I]/Ki)) * [S]) / (Km + [S])
+inhibition, as follows: 
 \begin{equation}
-    V = \frac{\displaystyle \frac{V_{max}}{1 + \frac{[I]}{K_{I}}} \cdot [S]}{K_{M} + [S]}
+    V = \frac{V_{max}/ (1 + \frac{[I]}{K_I})}{1 + \frac{K_{M}}{[S]}}
 \end{equation}
 
 \subsection*{Plots}
@@ -109,7 +109,7 @@ inhibition, as follows: % V = ((Vmax / (1 + [I]/Ki)) * [S]) / (Km + [S])
 \section{Uninhibited Reaction}
 
 The first set of data is from an uninhibited reaction. The data was fit to the
-Michaelis-Menten equation $V = V_{max} \displaystyle \frac{[S]}{K_{M} + [S]}$, where $V_{max}$ is the
+Michaelis-Menten equation $V = V_{max} \frac{[S]}{K_{M} + [S]}$, where $V_{max}$ is the
 maximum velocity of the reaction, $[S]$ is the substrate concentration, and $K_{M}$ is the
 Michaelis constant. The fitted parameters are as follows:
 \begin{itemize}
