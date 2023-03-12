@@ -148,5 +148,108 @@ Michaelis constant. The fitted parameters are as follows:
 
 \section{Inhibited Reaction}
 
+The second set of data is from an inhibited reaction. The data was fit to the Michaelis-Menten 
+equation $V = V_{max}\displaystyle \frac{[S]}{K_{M} + [S]}$, where $V_{max}$ is the maximum velocity of the 
+reaction, $[S]$ is the substrate concentration, and $K_{M}$ is the Michaelis constant. The 
+fitted parameters are as follows:
+\begin{itemize}
+\item $V_{max}$ = 0.39 $\pm$ 0.10 mmol/l
+\item $K_{M}$ = 5.71 $\pm$ 2.30 µmol/L/min
+\end{itemize}
+
+\begin{table}[H]
+
+\caption{Model summary with inhibitor}
+\centering
+\begin{tabular}[t]{l|r|r|r|r}
+\hline
+& Estimate & Std. Error & t value & Pr($>|t|$)\\
+\hline
+$V_{max}$ & 0.3945488 & 0.0974732 & 4.047765 & 0.0271504\\
+\hline
+$K_{M}$ & 5.7125880 & 2.2981536 & 2.485729 & 0.0888187\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+
+\caption{Confidence interval for $V_{max}$ and $K_{M}$ for inhibited reaction}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+  & 2.5\% & 97.5\%\\
+\hline
+$V_{max}$ & 0.2437008 & 3.270304\\
+\hline
+$K_{M}$ & 2.5583919 & 74.920253\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth, height=0.5\textheight]{plots/model_fit_plot2.png}
+\caption{Michaelis-Menten model for enzyme kinetics, showing the substrate concentration [S] (mmol/l) 
+on the x-axis and the reaction rate V (µmol/l/min) on the y-axis. The blue line represents the reaction 
+rate without inhibitor, while the red line shows the reaction rate with inhibitor. The legend indicates 
+whether the inhibitor is present or absent. The plot illustrates the effect of an inhibitor on the enzyme 
+activity, with the inhibited reaction rate curve shifted downwards compared to the uninhibited reaction rate curve.}
+\label{fig:enzyme_kinetics}
+\end{figure}
+
+\section{Non-competitive inhibition}
+
+The data was fit to the same Michaelis-Menten equation as before, but with an additional term to account for 
+the inhibitor: $    V =\displaystyle \frac{\displaystyle \frac{V_{max}}{1 + \frac{[I]}{K_{I}}} \cdot [S]}{K_{M} + [S]}
+$\\ where $[I]$ is the inhibitor 
+concentration and $K_{I}$ is the inhibition constant. The fitted parameters are as follows:
+\begin{itemize}
+\item $V_{max}$ = 0.39 $\pm$ 0.10 µmol/L/min
+\item $K_{M}$ = 5.71 $\pm$ 2.30 mmol/l
+\item $K_{I}$ = 0.10 $\pm$ 0.00 mmol/l
+\end{itemize}
+
+\begin{table}[H]
+
+\caption{Model summary for non-competitive inhibition}
+\centering
+\begin{tabular}[t]{l|r|r|r|r}
+\hline
+  & Estimate & Std. Error & t value & Pr($>|t|$)\\
+\hline
+$V_{max}$ & 3.8955119 & 0.0767059 & 50.78505 & 0\\
+\hline
+$K_{M}$ & 4.8887879 & 0.1656901 & 29.50562 & 0\\
+\hline
+$K_{I}$ & 0.1017605 & 0.0036314 & 28.02254 & 0\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+
+\caption{Confidence interval for non-competitive inhibition}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+  & 2.5\% & 97.5\%\\
+\hline
+$V_{max}$ & 3.7222470 & 4.0877450\\
+\hline
+$K_{M}$ & 4.5155594 & 5.3052748\\
+\hline
+$K_{I}$ & 0.0932454 & 0.1104207\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.2\textwidth, height=0.5\textheight]{plots/enzyme_hw_plot3.png}
+\caption{Bar plot showing parameter estimates with and without inhibitor for the $V_{max}$ and $K_M$ parameters. 
+Error bars represent the standard error of the estimates.}
+\label{fig:Bar plot $V_{max}$ $K_{M}$}
+\end{figure}
 
 \end{document}
