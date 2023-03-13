@@ -1,5 +1,6 @@
 # Enzyme Kinetics Analysis Report
 This report analyzes data on enzyme kinetics, one with an inhibitor and one without an inhibitor. Written in R using jupyter notebook.
+Presented in pdf created by LaTex. Jupyter notebook, tex file and pdf can be found in repo.
 
 
 ![report-1](https://user-images.githubusercontent.com/15692932/224846067-5456f1ef-940c-4d5e-9466-b7d97b51959c.png)
